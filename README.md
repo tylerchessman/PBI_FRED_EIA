@@ -10,6 +10,8 @@ Each data source requires its own api_key - which needs to be obtained directly 
 * EIA - https://www.eia.gov/opendata/register.php
 * Enpublica - submit an <a href="mailto:api_key_request@enpublica.com?subject=New%20api_key%20request&body=I%20would%20like%20to%20request%20a%20new%20api_key%20for%20Enpublica%20datasets.">email request</a> for a new api_key.
 
+**Note** - Each api key is stored/managed in Power BI, and only transmitted to the respective data source.
+
 ### Connector Installation - Power BI Desktop
 After obtaning the necessary api_key(s), download and register the connector in the Power BI Desktop; registration can be done either:
 * Automatically.  Download and run the signed self-extracting installer - .  This file will install the connector, and add it as a trusted connection. **Note:** requires Admin privileges.
