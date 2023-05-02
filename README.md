@@ -1,8 +1,8 @@
 # Enpublica data connector for Power BI
-A custom Power BI Data Connector for the St. Louis Federal Reserve (FRED) and U.S. Energy Information Administration (EIA) database
+A Power BI Data Connector for the St. Louis Federal Reserve (FRED) and U.S. Energy Information Administration (EIA) databases.
 
 ### Summary
-The Enpublica data connector provides easy access to over 1 million economic and energy-related time series directly in Power BI.  In addition to simple time series (i.e. date/value), the FRED and EIA databases also host a variety of multidimensional datasets.  Finally, this connector exposes a small set of supplemental datasets directly from Enpublica - including older historical data and a custom date dimension.
+The Enpublica data connector provides access to over 1 million economic and energy-related time series directly in Power BI.  In addition to simple time series (i.e. date/value), the FRED and EIA databases host a variety of multidimensional datasets.  This connector also exposes a small set of supplemental datasets directly from Enpublica - including historical data and a custom date dimension.
 
 ### Prerequisites
 Each data source requires its own api_key - which needs to be obtained directly from the respective publisher:
@@ -13,7 +13,7 @@ Each data source requires its own api_key - which needs to be obtained directly 
 ### Connector Installation - Power BI Desktop
 After obtaning the necessary api_key(s), download and register the connector in the Power BI Desktop; registration can be done either:
 * Automatically.  Download and run the signed self-extracting installer - .  This file will install the connector, and add it as a trusted connection. **Note:** requires Admin privileges.
-* Manually.  Download the connector file, Enpublica.pqx, and then:
+* Manually.  Download the connector file Enpublica.pqx and then:
     * Put the connector file in the local [Documents]\Power BI Desktop\Custom Connectors folder. If the folder doesn't exist, create it.
     * Adjust the data extension security settings; refer to https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connector-extensibility for instructions.
 
