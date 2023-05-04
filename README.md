@@ -13,10 +13,10 @@ Each data source requires its own api_key - which needs to be obtained directly 
 **Note** - Each api key is stored/managed in Power BI, and only transmitted to the respective data source.
 
 ### Connector Installation - Power BI Desktop
-After obtaning the necessary api_key(s), download and register the connector in the Power BI Desktop; registration can be done either:
+After obtaning the necessary api_key(s), download and configure the connector in the Power BI Desktop; configuration can be done either:
 * Automatically.  Download and run the signed self-extracting installer - .  This file will install the connector, and add it as a trusted connection. **Note:** requires Admin privileges.
 * Manually.  Download the connector file Enpublica.pqx and then:
-    * Put the connector file in the local [Documents]\Power BI Desktop\Custom Connectors folder. If the folder doesn't exist, create it.
+    * Copy the connector file to the local [Documents]\Power BI Desktop\Custom Connectors folder. If the folder doesn't exist, create it.
     * Adjust the data extension security settings; refer to https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connector-extensibility for instructions.
 
 ### Connector Installation - Power BI Service
