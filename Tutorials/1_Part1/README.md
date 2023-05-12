@@ -44,11 +44,11 @@ In the Navigator window, expand the FRED table; several child tables (ctgry, mis
 
 Click **fn\_fred\_series** in the Queries window, enter the following values into the **series\_id** parameter: **GDPC1, UNRATE, CPIAUCNS**. Next, click the Invoke button; rename the Query to fred\_series.
 
-![](./images/Tutorial1_Part1_5.gif)
+![](./images/Invoke_Fred_Series.gif)
 
 Next click/highlight the **fn\_fred\_series\_observations** function, enter the following values into the series\_id parameter: **GDPC1, UNRATE, CPIAUCNS&units=pc1** , and then click the **Invoke** button. This will return the same three series, but instead of metadata about the series, the actual values (i.e. the observations) are returned. Rename the **Invoked Function** to **fred\_series\_obs**. In the **Home** ribbon of the Power Query Editor, click the **Close & Apply** button.
 
-![](RackMultipart20230512-1-f25cy5_html_6759a3679d7321f0.png)
+![](./images/Tutorial1_Part1_5.jpg)
 
 Note: The additional parameter value for the CPI series ( **&units=pc1** ) requests a data value transformation (in this case, the percent change from a year ago); learn more about the additional parameters that can be passed into this function at [St. Louis Fed Web Services: fred/series/observations (stlouisfed.org)](https://fred.stlouisfed.org/docs/api/fred/series_observations.html#units).
 
@@ -56,17 +56,17 @@ Note: The additional parameter value for the CPI series ( **&units=pc1** ) reque
 
 Back in the Power BI Desktop, navigate to the Model View tab. Create a relationship between **fred\_series** and **fred\_series\_obs** by dragging the **series\_id** column to the **id** column. If you mess up or need to modify the relationship, double click the relationship line to open the **Edit relationship** window.
 
-![](RackMultipart20230512-1-f25cy5_html_68fb6f7adb2db21d.gif)
+![](./images/PBI_CreateRelationship.gif)
 
 Next, switch to the Report View; if you're using the starter report, the page already has a blank table, slicer, and line chart visual created for you. Highlight the slicer (in the upper right-hand corner), and then click (or drag/drop) the **id** column from the **fred\_series** table.
 
-![](RackMultipart20230512-1-f25cy5_html_a6bf9bdac4fb287f.png)
+![](./images/Tutorial1_Part1_6.jpg)
 
 Next, highlight the table (upper left-hand side) and click (or drag/drop) the following columns from the **fred\_series** table:
 
 **id, title, observation\_start, observation\_end, last\_updated, frequency, units, URL.**
 
-![](RackMultipart20230512-1-f25cy5_html_9782190b1324141b.png)
+![](./images/Tutorial1_Part1_7.jpg)
 
 Note that I've adjusted the formatting of some of the date columns (observation start/end) – and set the Data category for the URL column to Web URL. These adjustments can be made by clicking on the name of a particular column (in the Data tab) and then using the **Column tools** Ribbon (to display a URL icon, rather than the actual text, set the URL icon to On in the Table visual formatting area).
 
@@ -74,7 +74,7 @@ Almost done; highlight the line chart visual, and the check (or drag/drop) the *
 
 Select a series in the Slicer, and you should see something like the following -
 
-![](RackMultipart20230512-1-f25cy5_html_920d99917f416580.png)
+![](./images/Tutorial1_Part1_8.jpg)
 
 If you get stuck, or something doesn't look quite right, download the finished report from [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/1_Part1/Enpublica_Tutorial1_Part1_Finish.pbix) (you can also see a hosted version of the report from [here](https://app.powerbi.com/view?r=eyJrIjoiM2NlOWFiN2QtYTQ0NS00NWY4LTg3OWMtYmVjNjhhNzhjMDkxIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9&embedImagePlaceholder=true)).
 
@@ -88,7 +88,7 @@ This concludes part 1 of this tutorial, but realize we've just skimmed the surfa
 
 The St. Louis Federal Reserve Economic Database ([FRED](https://fredhelp.stlouisfed.org/fred/about/about-fred/what-is-fred/)) provides access to over 800,000 time series – collected from 100+ U.S. and international data sources. Data can be viewed directly in the browser or downloaded via a set of APIs. A good way to find a particular series is to use the search bar. For example, let's say we want to analyze Gross Domestic Product (GDP) in the United States. A quick search on the FRED website ([https://fred.stlouisfed.org/searchresults?st=GDP](https://fred.stlouisfed.org/searchresults?st=GDP)) displays several possible results – as shown in figure 1.
 
-![](RackMultipart20230512-1-f25cy5_html_a04a304f3df91552.png)
+![](./images/Tutorial1_Part1_Fred1.jpg)
 
 Figure 1 – Search for GDP on the FRED website
 
