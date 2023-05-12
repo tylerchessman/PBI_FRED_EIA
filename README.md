@@ -23,6 +23,6 @@ After obtaning the necessary api_key(s), download and configure the connector in
 To use this connector in the service (e.g., for scheduled refresh), you will need to enable custom data connectors in the gateway; this can be configured in the gateway app. Refer to https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-custom-connectors for instructions.
 
 ### Getting Started
-Learn how to use the connector by working through the tutorials.
+Learn how to use the connector by working through the <a href="./Tutorials">tutorials</a>.
 
 
