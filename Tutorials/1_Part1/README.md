@@ -34,17 +34,17 @@ The Enpublica data connector asks for an initial **Data Source (FRED, EIA, or En
 
 You'll be asked to enter your [api\_key](https://fred.stlouisfed.org/docs/api/api_key.html); enter the key value and then click the **Connect** button. Tip - if you enter an incorrect api\_key, it can be a bit tricky to edit and correct; see this quick link on how to update credentials.
 
-![](RackMultipart20230512-1-f25cy5_html_a9ed770cb55fe808.png)
+![](./images/Tutorial1_Part1_3.jpg)
 
-In the Navigator window, expand the FRED table; several child tables (ctgry, misc, releases, series, and sources) are listed. Click the arrow next to _ **series** _ **,** and then select/check _ **fn\_fred\_series** _ and _ **fn\_fred\_series\_observations** _. Next, click the _ **Transform Data** _ to open the Power Query Editor. If you accidently click the _ **Load** _ button, no worries; just click the _ **Transform data** _ button in the _ **Home** _ ribbon to open the Power Query Editor.
+In the Navigator window, expand the FRED table; several child tables (ctgry, misc, releases, series, and sources) are listed. Click the arrow next to **series** **,** and then select/check **fn\_fred\_series** and **fn\_fred\_series\_observations**. Next, click the **Transform Data** to open the Power Query Editor. If you accidently click the **Load** button, no worries; just click the **Transform data** button in the **Home** ribbon to open the Power Query Editor.
 
-![](RackMultipart20230512-1-f25cy5_html_58cbdbd07d936559.png)
+![](./images/Tutorial1_Part1_4.jpg)
 
 **Tip** : in the Power Query Editor, a function definition may sometimes appear to have an error (e.g., a question mark or triangle icon); this can be resolved by simply clicking the function name or (if necessary) selecting **Refresh Preview** from the Home ribbon.
 
-Click **fn\_fred\_series** in the Queries window, enter the following values into the _ **series\_id** _ parameter: **GDPC1, UNRATE, CPIAUCNS**. Next, click the Invoke button; rename the Query to fred\_series.
+Click **fn\_fred\_series** in the Queries window, enter the following values into the **series\_id** parameter: **GDPC1, UNRATE, CPIAUCNS**. Next, click the Invoke button; rename the Query to fred\_series.
 
-![](RackMultipart20230512-1-f25cy5_html_ac9743d75616c536.gif)
+![](./images/Tutorial1_Part1_5.gif)
 
 Next click/highlight the **fn\_fred\_series\_observations** function, enter the following values into the series\_id parameter: **GDPC1, UNRATE, CPIAUCNS&units=pc1** , and then click the **Invoke** button. This will return the same three series, but instead of metadata about the series, the actual values (i.e. the observations) are returned. Rename the **Invoked Function** to **fred\_series\_obs**. In the **Home** ribbon of the Power Query Editor, click the **Close & Apply** button.
 
