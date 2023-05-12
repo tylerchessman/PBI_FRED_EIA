@@ -18,7 +18,7 @@ Each of these sources provide an API (for those who work in oil & gas, API in th
 
 ### Getting Started
 
-In this tutorial, we will be using the Power BI Desktop – which can be downloaded from [here](https://powerbi.microsoft.com/en-us/desktop/). Note – If you are a MAC user, consider a virtualization technology like [Boot Camp](https://support.apple.com/en-us/HT201468#:~:text=How%20to%20install%20Windows%2010%20on%20Mac%201,the%20Boot%20Camp%20installer%20in%20Windows%20See%20More.) or [Parallels](https://www.parallels.com/). Then, head over to the Enpublica data connector [repository](https://github.com/tylerchessman/PBI_FRED_EIA) for installation instructions.  This first tutorial makes use of the FRED database, so this is the only api\_key you'll need.
+In this tutorial, we will be using the Power BI Desktop – which can be downloaded from [here](https://powerbi.microsoft.com/en-us/desktop/). Note – If you are a MAC user, consider a virtualization technology like [Boot Camp](https://support.apple.com/en-us/HT201468#:~:text=How%20to%20install%20Windows%2010%20on%20Mac%201,the%20Boot%20Camp%20installer%20in%20Windows%20See%20More.) or [Parallels](https://www.parallels.com/). Then, install the Enpublica data connector from this [repository](https://github.com/tylerchessman/PBI_FRED_EIA).  This first tutorial makes use of the FRED database, so this is the only api\_key you'll need.
 
 While you can create a new report from scratch, we've created a starter report to save a bit of time with formatting and arranging visuals – it can downloaded [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/1_Part1/Enpublica_Tutorial1_Part1_Begin.pbix).
 
