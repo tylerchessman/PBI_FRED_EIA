@@ -96,7 +96,7 @@ Figure 1 – Search for GDP on the FRED website
 
 .
 
-![](RackMultipart20230512-1-f25cy5_html_efe036624ee0a3bb.png)
+![](./images/Tutorial1_Part1_Fred2.jpg)
 
 While it is possible to download the series from this webpage, the API is a better approach – as it allows the data to be imported directly into a tool like Power BI – without having to first download the data to a file. This also means data can be refreshed in Power BI – eliminating any "extra" download steps.
 
@@ -104,10 +104,8 @@ While it is possible to download the series from this webpage, the API is a bett
 
 As stated in the [documentation](https://fred.stlouisfed.org/docs/api/fred/), the FRED API can be called from any technology that can "_parse XML or JSON, and communicate with our servers using HTTPS_". Broken into different "groups" of URLs, the API retrieves information about categories, releases, series, sources, and tags (figure 3).
 
-![](RackMultipart20230512-1-f25cy5_html_23ff1d5be7c3ec18.png)
+![](./images/Tutorial1_Part1_Fred3.jpg)
 
 Figure 3 – API Groups
 
 Currently, the Enpublica Data Connector implements many (but not all) of these API calls – some of which we'll explore in a future tutorial. Note: if there is a particular API call that you need to use that isn't _directly_ exposed, we provide a generic function ( **fn\_fred\_other** ) that can be used to make the call and get the raw json results.
-
-Last Saved: 5/12/2023 2:26:00 PM
