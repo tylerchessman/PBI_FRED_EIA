@@ -28,11 +28,11 @@ Open the Power BI Desktop, and then (from either the initial splash screen, or t
 
 ![](./images/Tutorial1_Part1_1.jpg)
 
-The Enpublica data connector asks for an initial _**Data Source (FRED, EIA, or Enpublica)**_; choose _ **enpublica\_FRED** _ in the drop-down box and click the _ **OK** _ button.
+The Enpublica data connector asks for an initial **Data Source (FRED, EIA, or Enpublica)**; choose **enpublica\_FRED** in the drop-down box and click the **OK** button.
 
-![](RackMultipart20230512-1-f25cy5_html_3125cefe13a2734c.png)
+![](./images/Tutorial1_Part1_2.jpg)
 
-You'll be asked to enter your [api\_key](https://fred.stlouisfed.org/docs/api/api_key.html); enter the key value and then click the _ **Connect** _ button. Tip - if you enter an incorrect api\_key, it can be a bit tricky to edit and correct; see this quick link on how to update credentials.
+You'll be asked to enter your [api\_key](https://fred.stlouisfed.org/docs/api/api_key.html); enter the key value and then click the **Connect** button. Tip - if you enter an incorrect api\_key, it can be a bit tricky to edit and correct; see this quick link on how to update credentials.
 
 ![](RackMultipart20230512-1-f25cy5_html_a9ed770cb55fe808.png)
 
