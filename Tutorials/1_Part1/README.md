@@ -32,7 +32,7 @@ The Enpublica data connector asks for an initial **Data Source (FRED, EIA, or En
 
 ![](./images/Tutorial1_Part1_2.jpg)
 
-You'll be asked to enter your [api\_key](https://fred.stlouisfed.org/docs/api/api_key.html); enter the key value and then click the **Connect** button. Tip - if you enter an incorrect api\_key, it can be a bit tricky to edit and correct; see this quick link on how to update credentials.
+You'll be asked to enter your [api\_key](https://fred.stlouisfed.org/docs/api/api_key.html); enter the key value and then click the **Connect** button. Tip - if you enter an incorrect api\_key, it can be a bit tricky to edit and correct; see this quick [link](./FixConnErrors.md) on how to update credentials.
 
 ![](./images/Tutorial1_Part1_3.jpg)
 
