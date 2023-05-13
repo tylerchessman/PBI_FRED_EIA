@@ -24,25 +24,25 @@ From the Home Ribbon, select Get data; in the Get Data dialog box) search for th
 
 In the **Enpublica** Window, select enpublica from the Data Source drop down.
 
-![](RackMultipart20230513-1-x1a5v9_html_d14b63ef0ae45abc.png)
+![](./images/Picture3.png)
 
 Note: the first time you use the enpublica data source, you will need to obtain an api\_key to establish connectivity. This api\_key is separate from the api\_key used to connect to the FRED database. You can submit a request for an enpublica api\_key via [email](mailto:api_key_request@enpublica.com?subject=New%20api_key%20request&body=I%20would%20like%20to%20request%20a%20new%20api_key%20for%20Enpublica%20datasets.). If you happen to enter in the wrong api\_key, please visit here to learn how to course correct.
 
-![](RackMultipart20230513-1-x1a5v9_html_bafd0358f6b15e35.png)
+![](./images/Picture4.png)
 
 After entering in the api\_key value, in the Navigator, select the **fn\_enpublica\_date\_dim** and **fn\_enpublica\_v2\_series\_observations** functions, and then click the **Transform Data** button to open the Power Query Editor. If you accidentally click the **Load** (instead of **Transform Data** ) button, simply open the Power Query Editor by clicking the Transform Data from the Home Ribbon.
 
-![](RackMultipart20230513-1-x1a5v9_html_4ad82ec576401f34.png)
+![](./images/Picture5.png)
 
 In the Power Query Editor, highlight **fn\_enpublica\_date\_dim** in the Queries list. **Tip** : a function definition may sometimes appear to have an error (e.g., a question mark or triangle icon, along with a message about "Preview refresh was cancelled…"); this can be resolved by simply clicking the function name or (if necessary) selecting **Refresh Preview** from the Home ribbon.
 
 Enter 1/1/1900 in the start date parameter, and then click the **Invoke** button.
 
-![](RackMultipart20230513-1-x1a5v9_html_2b39ad2a5025e089.png)
+![](./images/Picture6.png)
 
 In the Queries list (or in the Query Settings) rename **Invoked Function** to **Date**. Next, highlight the **fn\_enpublica\_v2\_series\_observations** function; enter **USBusinessCycles** in the first text box, click the **Invoke** button.
 
-![](RackMultipart20230513-1-x1a5v9_html_93b5ea8dd4d5a8d4.png)
+![](./images/Picture7.png)
 
 Rename this query to USBusinessCycles. Finally, click **Close & Apply** in the **Home** Ribbon to load data and close the Power Query Editor.
 
@@ -50,33 +50,33 @@ Rename this query to USBusinessCycles. Finally, click **Close & Apply** in the *
 
 Back in the Power BI Window, navigate to the Data View, and select the **Date** table. Originally designed for performing analysis of U.S. government spending and debt, this function returns a date table – starting with dates as early as 1790 and extending up to 15 years in the future.
 
-![](RackMultipart20230513-1-x1a5v9_html_5734f26b5dc1ad0a.png)
+![](./images/Picture8.png)
 
 By default, only 1 row per month is returned, but all days for the month can be returned by entering a date value in the **all dates as of** parameter. Note that some of these columns may not be useful for your particular use case(s) (e.g., the fiscal columns are aligned to the U.S. government) – and they can be removed if desired. Also, you may want to adjust the display format of the Date columns.
 
 For purposes of this article, the column of interest is **IsRecession**. Starting with the first recession in 1857, each row is marked with a Boolean (True) to indicate if the date corresponds to a recessionary period. Another column, IdCycle, is used to join to a reference table of the business cycles. We've imported this table – but note that it is optional for creating the recession bar visual affect.
 
-![](RackMultipart20230513-1-x1a5v9_html_a9427b7b35f58c78.png)
+![](./images/Picture9.png)
 
 Let's create a relationship between the **Fred\_Series\_Obs** and **Date** table; switch to the Relationship view, and then drag/drop the **DateFirstOfMonth** column (from the **Date** table) onto the **date** column of the **Fred\_Series\_Obs** table (make sure you pick **DateFirstOfMonth** , and not the Date column – as FRED observations default to first of month; if you make a mistake, simply double click the relationship line to adjust the column selection). Also, if it wasn't done automatically, create a relationship between **USBusinessCycles** and **Date** by dragging/dropping the **IdCycle** column.
 
-![](RackMultipart20230513-1-x1a5v9_html_579ef88721cf9a74.png)
+![](./images/Picture10.png)
 
 #### Add recession bars to the visual
 
 Switching to the Report View, click/highlight the chart. Notice that the chart is a _Line and stacked column_ visual (see appendix for an explanation). Drag/drop the **IsRecession** column to the _Column y-axis_. At first, the visual appears broken.
 
-![](RackMultipart20230513-1-x1a5v9_html_4c0a7ce592fbe7aa.png)
+![](./images/Picture11.png)
 
 The "date" value used on the x-axis comes from the **Fred\_Series\_Obs** table instead of the **Date** table. To fix the visual, we swap **date** with the **Date** value from the Date Table.
 
-![](RackMultipart20230513-1-x1a5v9_html_a41ee683cc2fa48a.png)
+![](./images/Picture12.png)
 
 Alternatively, we can instead modify the relationship between the **Fred\_Series\_Obs** and **Date** Table – specifically, by setting the **Cross filter direction** to **Both**. Personally, I prefer using the first approach (and subsequently hiding the **date** value on the **Fred\_Series\_Obs** table to avoid confusion).
 
 Next, highlight the empty Slicer (below the chart visual) and, after adding the **Date** column from the **Date** table, filter out dates prior to 1/1/1950.
 
-![](RackMultipart20230513-1-x1a5v9_html_401bcfae58b31ae8.png)
+![](./images/Picture13.png)
 
 As a last touch, add a calculated column, **BusinessCycleName** , to the **Date** Table.
 
@@ -84,11 +84,11 @@ BusinessCycleName = RELATED(USBusinessCycles[Cycle])
 
 Add this column to the Tooltips area of the visual. In my report, I've renamed the column in the Tooltips area to **Business Cycle** instead of **First BusinessCycleName**. I've also renamed Column y-axis column to **IsRecession** , and the Line y-axis to **Value**.
 
-![](RackMultipart20230513-1-x1a5v9_html_8c8b865431ec740b.png)
+![](./images/Picture14.png)
 
 You're done! If you've run into any issues, no worries – I've posted a finished report here. Be sure to check out the appendix, at the end of this article, for tips on how to format and reuse the chart. The final report also shows how to use small multiples to display multiple series at a time.
 
-![](RackMultipart20230513-1-x1a5v9_html_91887b49e70232a3.png)
+![](./images/Picture15.png)
 
 ### Summary
 
@@ -107,5 +107,3 @@ It takes a bit of finesse to get recession bars to display properly when working
 - Set the Color of the Columns to **White, 20% darker**
 - With the Y-axis toggled to **On** , expand the Values section, set the Switch axis position to **On**. Toggle the Title to On or Off as desired
 - Toggle the Y-axis to **Off**.
-
-Last Saved: 5/12/2023 8:50:00 PM
