@@ -8,7 +8,7 @@ In [part 1](https://github.com/tylerchessman/PBI_FRED_EIA/tree/main/Tutorials/1_
 
 ### Getting Started
 
-Download the starter report for this tutorial, **Enpublica\_Tutorial1\_Part2\_Begin.pbix** , from here (note – before you can refresh data from FRED, you'll need to obtain an api key; see part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Next, open the report in Power BI Desktop; the report should look like the following:
+Download the starter report for this tutorial, **Enpublica\_Tutorial1\_Part2\_Begin.pbix** , from [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/1_Part2/Enpublica_Tutorial1_Part2_Begin.pbix) (note – before you can refresh data from FRED, you'll need to obtain an api key; see part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Next, open the report in Power BI Desktop; the report should look like the following:
 
 ![](./images/Picture1.png)
 
@@ -86,7 +86,7 @@ Add this column to the Tooltips area of the visual. In my report, I've renamed t
 
 ![](./images/Picture14.png)
 
-You're done! If you've run into any issues, no worries – I've posted a finished report here. Be sure to check out the appendix, at the end of this article, for tips on how to format and reuse the chart. The final report also shows how to use small multiples to display multiple series at a time.
+You're done! If you've run into any issues, no worries – I've posted a finished report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/1_Part2/Enpublica_Tutorial1_Part2_Finish.pbix). Be sure to check out the appendix, at the end of this article, for tips on how to format and reuse the chart. The final report also shows how to use small multiples to display multiple series at a time.
 
 ![](./images/Picture15.png)
 
