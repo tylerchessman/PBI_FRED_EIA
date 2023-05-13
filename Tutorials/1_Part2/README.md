@@ -1,4 +1,4 @@
-## Using the [Enpublica Data Connector](https://github.com/tylerchessman/PBI_FRED_EIA) for Power BI – Part II (Recession Bars)
+## Using the [Enpublica Data Connector](https://github.com/tylerchessman/PBI_FRED_EIA) for Power BI | Tutorial 1 | Part II (Recession Bars)
 
 _A new data connector provides easy access to over 1 million economic and energy-related time series directly in Power BI_
 
