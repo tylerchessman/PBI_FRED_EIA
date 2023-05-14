@@ -86,7 +86,7 @@ Add this column to the Tooltips area of the visual. In my report, I've renamed t
 
 ![](./images/Picture14.png)
 
-You're done! If you've run into any issues, no worries – I've posted a finished report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/1_Part2/Enpublica_Tutorial1_Part2_Finish.pbix). Be sure to check out the appendix, at the end of this article, for tips on how to format and reuse the chart. The final report also shows how to use small multiples to display multiple series at a time.
+You're done! If you've run into any issues, no worries – I've posted a finished report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/1_Part2/Enpublica_Tutorial1_Part2_Finish.pbix) (you can also see a [hosted version](https://app.powerbi.com/view?r=eyJrIjoiYjY3OGFhODQtZDM1YS00MDVjLThjMmMtZWRlYzg4YTU2OTBjIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9) of the report).  Be sure to check out the appendix, at the end of this article, for tips on how to format and reuse the chart. The final report also shows how to use small multiples to display multiple series at a time.
 
 ![](./images/Picture15.png)
 
