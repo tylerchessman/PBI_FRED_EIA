@@ -1,3 +1,7 @@
-Start with Tutorial 1, Part 1, in the <a href="./1_Part1">1_Part1</a> folder.
+[Tutorial 1 (Part I )](./1_Part1) - Intro to the new data connector
+
+[Tutorial 1 (Part II)](./1_Part2) - Adding Recession Bars to a visual
+
+[Tutorial 2](./2) - Pivoting and adjusting series observations
 
 Instructions (including links to Video tutorials when/if available) along with corresponding PBIX file(s) are in each folder.
