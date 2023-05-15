@@ -19,6 +19,8 @@ After obtaning the necessary api_key(s), download and configure the connector in
     * Copy the connector file to the local [Documents]\Power BI Desktop\Custom Connectors folder. If the folder doesn't exist, create it.
     * Adjust the data extension security settings; refer to https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connector-extensibility for instructions.
 
+**Tip!**  If you install the connector _while_ Power BI Desktop is open, make sure you close/re-open Power BI Desktop to ensure the connector is loaded.
+
 ### Connector Installation - Power BI Service
 To use this connector in the service (e.g., for scheduled refresh), you will need to enable custom data connectors in the gateway; this can be configured in the gateway app. Refer to https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-custom-connectors for instructions.
 
