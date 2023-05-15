@@ -8,7 +8,7 @@ In this quick tutorial, we learn how to pivot and adjust data observations – r
 
 ### Getting Started
 
-Download the starter report for this tutorial, [Enpublica_Tutorial3_Begin.pbix](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/2/Enpublica_Tutorial3_Begin.pbix) (note – this tutorial uses data from the FRED database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Next, open the report in Power BI Desktop:
+Download the starter report for this tutorial, [Enpublica_Tutorial2_Begin.pbix](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/2/Enpublica_Tutorial2_Begin.pbix) (note – this tutorial uses data from the FRED database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Next, open the report in Power BI Desktop:
 
 ![](./images/Picture1.png)
 
@@ -45,7 +45,7 @@ Now, each series\_id is a column – and can used/formatted independently of oth
 
 The parameter **adjust\_date** will set the date to the end of the period (week, month, quarter, or year) – as the FRED APIs default to the beginning of a given period.
 
-To save changes, click the **Close & Apply** from the **Home** Ribbon. Back in the Power BI Desktop, try adjusting/creating a new visual with the pivoted series. I've posted a finished version of the report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/2/Enpublica_Tutorial3_Finish.pbix) – and you can see an [online version](https://app.powerbi.com/view?r=eyJrIjoiYWU2NDkyNDctYWMzNC00N2JhLTg4MzItMzMxYzg5Y2JiMmIzIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9) as well.
+To save changes, click the **Close & Apply** from the **Home** Ribbon. Back in the Power BI Desktop, try adjusting/creating a new visual with the pivoted series. I've posted a finished version of the report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/2/Enpublica_Tutorial2_Finish.pbix) – and you can see an [online version](https://app.powerbi.com/view?r=eyJrIjoiYWU2NDkyNDctYWMzNC00N2JhLTg4MzItMzMxYzg5Y2JiMmIzIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9) as well.
 
 ![](./images/Picture2.png)
 
