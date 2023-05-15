@@ -92,7 +92,7 @@ You're done! If you've run into any issues, no worries – I've posted a finishe
 
 ### Summary
 
-In the 2nd tutorial, we'll learn how to pivot data series observations (resulting in a format that is typically a bit easier to work with in Power BI), adjust the series title, and use some of the other popular API calls. Stay tuned!
+In the [2nd](./../2) tutorial, we'll learn how to pivot data series observations (resulting in a format that is typically a bit easier to work with in Power BI) and adjust the series title.  Subsequent tutorials will highlight some of the other popular FRED API calls.
 
 ### Appendix
 
