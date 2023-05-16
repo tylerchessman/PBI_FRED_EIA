@@ -10,15 +10,15 @@ Have you ever wanted to perform your own economic analysis? Perhaps you read a r
 
 Inspired by an Excel add-in, the Enpublica Data Connector is essentially a wrapper around three different data sources –
 
-- Louis Federal Reserve Economic Database ([FRED](https://fredhelp.stlouisfed.org/fred/about/about-fred/what-is-fred/)) – provides access to over 800,000 time series, collected from 100+ U.S. and international data sources
-- S. Energy Information Administration ([EIA](https://www.eia.gov/opendata/documentation.php)) – maintains several hundred thousand time series and datasets related to domestic and internal energy production/usage
+- St. Louis Federal Reserve Economic Database ([FRED](https://fredhelp.stlouisfed.org/fred/about/about-fred/what-is-fred/)) – provides access to over 800,000 time series, collected from 100+ U.S. and international data sources
+- Energy Information Administration ([EIA](https://www.eia.gov/opendata/documentation.php)) – maintains several hundred thousand time series and datasets related to domestic and internal energy production/usage
 - Enpublica – a small set of supplemental datasets – including (older) historical data, unique energy and/or economic datasets not available in FRED/EIA, and a custom date dimension
 
 Each of these sources provide an API (for those who work in oil & gas, API in this case means Application Programming Interface, not American Petroleum Institute) which can be used to import data into another tool. The Enpublica data connector makes using these APIs in Power BI easier; it automatically handles things like data type conversions, pagination for larger datasets, calling an API multiple times (without incurring usage time-outs), and securely storing API keys.
 
 ### Getting Started
 
-In this tutorial, we will be using the Power BI Desktop – which can be downloaded from [here](https://powerbi.microsoft.com/en-us/desktop/). Note – If you are a MAC user, consider a virtualization technology like [Boot Camp](https://support.apple.com/en-us/HT201468#:~:text=How%20to%20install%20Windows%2010%20on%20Mac%201,the%20Boot%20Camp%20installer%20in%20Windows%20See%20More.) or [Parallels](https://www.parallels.com/). Then, install the Enpublica data connector from this [repository](https://github.com/tylerchessman/PBI_FRED_EIA).  This first tutorial makes use of the FRED database, so this is the only api\_key you'll need.
+In this tutorial, we will be using the Power BI Desktop – which can be downloaded from [here](https://powerbi.microsoft.com/en-us/desktop/). Note – If you are a MAC user, consider a virtualization technology like [Boot Camp](https://support.apple.com/en-us/HT201468#:~:text=How%20to%20install%20Windows%2010%20on%20Mac%201,the%20Boot%20Camp%20installer%20in%20Windows%20See%20More.) or [Parallels](https://www.parallels.com/). Then, install the [Enpublica data connector](https://github.com/tylerchessman/PBI_FRED_EIA).  This first tutorial makes use of the FRED database, so this is the only api\_key you'll need.
 
 While you can create a new report from scratch, we've created a starter report to save a bit of time with formatting and arranging visuals – it can downloaded [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/1_Part1/Enpublica_Tutorial1_Part1_Begin.pbix).
 
@@ -89,14 +89,13 @@ This concludes part 1 of this tutorial, but realize we've just skimmed the surfa
 The St. Louis Federal Reserve Economic Database ([FRED](https://fredhelp.stlouisfed.org/fred/about/about-fred/what-is-fred/)) provides access to over 800,000 time series – collected from 100+ U.S. and international data sources. Data can be viewed directly in the browser or downloaded via a set of APIs. A good way to find a particular series is to use the search bar. For example, let's say we want to analyze Gross Domestic Product (GDP) in the United States. A quick search on the FRED website ([https://fred.stlouisfed.org/searchresults?st=GDP](https://fred.stlouisfed.org/searchresults?st=GDP)) displays several possible results – as shown in figure 1.
 
 ![](./images/Tutorial1_Part1_Fred1.jpg)
-
 Figure 1 – Search for GDP on the FRED website
+
 
 **Real Gross Domestic Product** is what is often cited in news articles and financial analysis – as it accounts for inflation i.e. it is the "_inflation adjusted value of the goods and services produced by labor and property located in the United States_". By clicking on the link for Real Gross Domestic Product, a time series chart is displayed, as shown in figure 2. The series id (GDPC1) is also provided alongside the series title.
 
-.
-
 ![](./images/Tutorial1_Part1_Fred2.jpg)
+Figure 2 – GDP
 
 While it is possible to download the series from this webpage, the API is a better approach – as it allows the data to be imported directly into a tool like Power BI – without having to first download the data to a file. This also means data can be refreshed in Power BI – eliminating any "extra" download steps.
 
@@ -105,7 +104,7 @@ While it is possible to download the series from this webpage, the API is a bett
 As stated in the [documentation](https://fred.stlouisfed.org/docs/api/fred/), the FRED API can be called from any technology that can "_parse XML or JSON, and communicate with our servers using HTTPS_". Broken into different "groups" of URLs, the API retrieves information about categories, releases, series, sources, and tags (figure 3).
 
 ![](./images/Tutorial1_Part1_Fred3.jpg)
-
 Figure 3 – API Groups
+
 
 Currently, the Enpublica Data Connector implements many (but not all) of these API calls – some of which we'll explore in a future tutorial. Note: if there is a particular API call that you need to use that isn't _directly_ exposed, we provide a generic function ( **fn\_fred\_other** ) that can be used to make the call and get the raw json results.
