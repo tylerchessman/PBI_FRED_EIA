@@ -24,6 +24,6 @@ What do we do? Take a deep breath, cancel out of this dialog box and then, from 
 
 ![](./images/Picture6.png)
 
-Find the corresponding Data Source – add click Edit Permissions to try again!
+Find the corresponding Data Source – add click **Edit Permissions** to try again!
 
 ![](./images/Picture7.png)
