@@ -38,7 +38,7 @@ In the Power Query Editor, highlight **fn\_enpublica\_date\_dim** in the Queries
 
 Enter **1/1/1900** in the start date parameter, and then click the **Invoke** button.
 
-![](./images/Picture6.png)
+![](./images/Picture6V2.png)
 
 In the Queries list (or in the Query Settings) rename **Invoked Function** to **Date**. Next, highlight the **fn\_enpublica\_v2\_series\_observations** function; enter **USBusinessCycles** in the first text box, click the **Invoke** button.
 
