@@ -36,7 +36,7 @@ After entering in the api\_key value, in the Navigator, select the **fn\_enpubli
 
 In the Power Query Editor, highlight **fn\_enpublica\_date\_dim** in the Queries list. **Tip** : a function definition may sometimes appear to have an error (e.g., a question mark or triangle icon, along with a message about "Preview refresh was cancelled…"); this can be resolved by simply clicking the function name or (if necessary) selecting **Refresh Preview** from the Home ribbon.
 
-Enter 1/1/1900 in the start date parameter, and then click the **Invoke** button.
+Enter **1/1/1900** in the start date parameter, and then click the **Invoke** button.
 
 ![](./images/Picture6.png)
 
