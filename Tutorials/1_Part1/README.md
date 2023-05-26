@@ -42,7 +42,7 @@ In the Navigator window, expand the FRED table; several child tables (ctgry, mis
 
 **Tip** : in the Power Query Editor, a function definition may sometimes appear to have an error (e.g., a question mark or triangle icon); this can be resolved by simply clicking the function name or (if necessary) selecting **Refresh Preview** from the Home ribbon.
 
-Click **fn\_fred\_series** in the Queries window, enter the following values into the **series\_id** parameter: **GDPC1, UNRATE, CPIAUCNS**. Next, click the Invoke button; rename the Query to fred\_series.
+Click **fn\_fred\_series** in the Queries window, enter the following values into the **series\_id** parameter: **GDPC1, UNRATE, CPIAUCNS**. Next, click the Invoke button; rename the Query to **fred\_series**.
 
 ![](./images/Invoke_Fred_Series.gif)
 
