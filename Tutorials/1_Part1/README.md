@@ -4,7 +4,7 @@ _A new data connector provides easy access to over 1 million economic and energy
 
 ### Summary
 
-Have you ever wanted to perform your own economic analysis? Perhaps you read a recent article about employment or inflation – and wanted to dig into the numbers. Or you may be responsible for managing corporate data – but need to integrate commodity prices or macro-economic indicators. If so, you're in luck. A new data connector for Power BI makes it easy to tap into 1 million+ economic and energy-related time series and datasets. Let's learn how to use this new connector by analyzing three key indicators – economic growth, unemployment, and inflation.
+Have you ever wanted to perform your own economic analysis? Perhaps you read a recent article about employment or inflation – and wanted to dig into the numbers. Or you may be responsible for managing corporate data – but need to integrate commodity prices or macro-economic indicators. If so, you're in luck. A new data connector for Power BI makes it easy to tap into 1 million+ economic and energy-related time series and datasets. Let's learn how to use this new connector by analyzing three key indicators – economic growth, unemployment, and inflation.   **Update -** The video companion for this tutorial is now available [here](https://youtu.be/7bKQuYYUSZ0).
 
 ### Introducing the Enpublica Data Connector
 
