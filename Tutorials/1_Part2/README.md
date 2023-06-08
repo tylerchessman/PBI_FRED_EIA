@@ -6,6 +6,8 @@ _A new data connector provides easy access to over 1 million economic and energy
 
 In [part 1](https://github.com/tylerchessman/PBI_FRED_EIA/tree/main/Tutorials/1_Part1) of this tutorial, we learned how to use the new Enpublica Data Connector for Power BI to retrieve data from the St. Louis Federal Reserve Economic Database ([FRED](https://fredhelp.stlouisfed.org/fred/about/about-fred/what-is-fred/)). Now, we'll enhance this report by adding recession bars to a visual.
 
+**Update** - The video companion for this tutorial is now available [here](https://youtu.be/fybyftfG-F8).
+
 ### Getting Started
 
 Download the starter report for this tutorial, **Enpublica\_Tutorial1\_Part2\_Begin.pbix** , from [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/1_Part2/Enpublica_Tutorial1_Part2_Begin.pbix) (note – before you can refresh data from FRED, you'll need to obtain an api key; see part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Next, open the report in Power BI Desktop; the report should look like the following:
