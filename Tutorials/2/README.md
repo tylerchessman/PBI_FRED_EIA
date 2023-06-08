@@ -45,7 +45,7 @@ Now, each series\_id is a column – and can used/formatted independently of oth
 
 The parameter **adjust\_date**, when set to **true**, will set the date to the end of the period (week, month, quarter, or year) – as the FRED APIs default to the beginning of a given period.
 
-Adjust the parameter values as follows: **fn_fred_series_observations("GDPC1, UNRATE, CPIAUCNS&units=pc1", true, 3, true)**; then, click the **Close & Apply** from the **Home** Ribbon. Back in the Power BI Desktop, try adjusting/creating a new visual with the pivoted series. I've posted a finished version of the report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/2/Enpublica_Tutorial2_Finish.pbix) – and you can see an [online version](https://app.powerbi.com/view?r=eyJrIjoiYWU2NDkyNDctYWMzNC00N2JhLTg4MzItMzMxYzg5Y2JiMmIzIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9) as well.
+Adjust the parameter values as follows: **fn_fred_series_observations("GDPC1, UNRATE, CPIAUCNS&units=pc1", true, 3, true)**; then, click the **Close & Apply** from the **Home** Ribbon. Back in the Power BI Desktop, try adjusting/creating a new visual with the pivoted series. I've posted a finished version of the report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/2/Enpublica_Tutorial2_Finish.pbix) – and you can see an [online version](https://app.powerbi.com/view?r=eyJrIjoiMWE4ZGZiZDAtNDhlMi00OWZlLTgxYmItMDIxOGU1MmQ3N2U3IiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9) as well.
 
 ![](./images/Picture2.png)
 
