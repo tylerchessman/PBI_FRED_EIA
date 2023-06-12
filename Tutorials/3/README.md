@@ -8,17 +8,17 @@ In the first few tutorials, we looked at how to connect to the FRED database –
 
 ### Getting Started
 
-Download the report for this tutorial, **Enpublica\_Tutorial3.pbix** (note – this tutorial uses data from the FRED database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Then, open the report in Power BI Desktop.
+Download the report for this tutorial, [Enpublica_Tutorial3.pbix](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/3/Enpublica_Tutorial3.pbix) (note – this tutorial uses data from the FRED database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Then, open the report in Power BI Desktop.
 
-![](RackMultipart20230612-1-5t9gl9_html_c8b3ae21e754ac75.png)
+![](./images/Picture1.png)
 
 Next, open the Power Query Editor by clicking **Transform data** from the **Home** Ribbon. You'll notice several query Groups (ctgry, misc, releases, series, and sources), function definitions, and queries have already been added to this report:
 
-![](RackMultipart20230612-1-5t9gl9_html_73e69be620c4cc87.png)
+![](./images/Picture2.png)
 
 As a quick reminder, these initial functions definitions were added by clicking **New Source** (from the Home Ribbon), selecting the **Enpublica** Connector, and then (after choosing **enpublica\_FRED** as the initial Data Source) selecting all the functions in the Navigator window:
 
-![](RackMultipart20230612-1-5t9gl9_html_2c10d283311cf82b.png)
+![](./images/Picture3.png)
 
 Let's now review the functionality/use cases for these functions.
 
@@ -28,52 +28,52 @@ Let's now review the functionality/use cases for these functions.
 
 - **fn\_fred\_category** – returns a category given a particular category id.
 
-![](RackMultipart20230612-1-5t9gl9_html_211c3096e89207b3.png)
+![](./images/Picture4.png)
 
 - **fn\_fred\_category\_children** – returns the child categories for a given category id. Note, a category can contain multiple _levels_ of child categories; this function returns only the top-level children.
 
-![](RackMultipart20230612-1-5t9gl9_html_17211e4296f0a4d2.png)
+![](./images/Picture5.png)
 
 - **fn\_fred\_category\_series** – returns all series for a given category id, with optional parameters used for filtering.
 
-![](RackMultipart20230612-1-5t9gl9_html_3ad56b352cb7805.png)
+![](./images/Picture6.png)
 
 #### Miscellaneous functions
 
 - **fn\_delimited\_string\_from\_table** – this isn't part of FRED - rather, it is a utility function that can come in handy when trying to pass the _output_ of an API call as an _input_ to another call. For example, in the pictures below, the output of **qry\_fred\_category\_series** (a table containing the series metadata for a given category id) is invoked to generate a comma delimited string.
 
-![](RackMultipart20230612-1-5t9gl9_html_b4e1a0ca605d14a2.png)
+![](./images/Picture7.png)
 
-![](RackMultipart20230612-1-5t9gl9_html_64986c97dce91ef7.png)
+![](./images/Picture8.png)
 
 This string value ( **qry\_delimited\_string\_from\_table** ) is then used in the query **qry\_fred\_series\_observations** as the first parameter.
 
-![](RackMultipart20230612-1-5t9gl9_html_9aa563c5624a94c4.png)
+![](./images/Picture9.png)
 
 Note: If this is a bit confusing, check out the video tutorial (link at the beginning of this tutorial) to see it in action.
 
 - **fn\_fred\_other.** The Enpublica Data Connector implements most of, but not all, the various API calls available from FRED. To make use of one of the calls not explicitly implemented, you can use **fn\_fred\_other** (note, calling this function will require a bit more custom transformation – as the native output from FRED is json)
 
-![](RackMultipart20230612-1-5t9gl9_html_80b4792567f9dbbf.png)
+![](./images/Picture10.png)
 
-![](RackMultipart20230612-1-5t9gl9_html_4359e5a45810d2b9.png)
+![](./images/Picture11.png)
 
 #### Releases tables/functions
 
 - **releases** – this table returns information about the 300+ sources that make up the FRED database.
 
-![](RackMultipart20230612-1-5t9gl9_html_56292345af4c554c.png)
+![](./images/Picture12.png)
 
 - **fn\_fred\_release\_series** – similar to fn\_fred\_category\_series, this function returns the series for a given release id.
 - **fn\_fred\_release\_table** – returns a "release table" for a given release id and optional element id. To get familiar with release tables, head over to the FRED site and browse by Release. For example, as shown in the animated picture below, navigate to [https://fred.stlouisfed.org](https://fred.stlouisfed.org/); select the **Release** link, and then find/select **Gross Domestic Product**. Then, select **Section 1 – Domestic Product and Income**. You'll see several tables – select **Table 1.1.6. Real Gross Domestic Product, Chained Dollars** , and then **Quarterly**. The resulting table summarizes the key accounts that comprise GDP (personal consumption, investment, net exports, and government) for the latest quarter.
 
-![](RackMultipart20230612-1-5t9gl9_html_5f20b320021e3a77.gif)
+![](./images/ReleaseTable.gif)
 
-To see an example of using this API call, look at the query **qry\_fred\_release\_table** and (in the Power BI Desktop) the visual **titled Release Table** in the **Release** page.
+To see an example of using this API call, look at the query **qry\_fred\_release\_table** and (in the Power BI Desktop) the visual titled **Release Table** in the **Release** page.
 
-![](RackMultipart20230612-1-5t9gl9_html_887da76b4f33a768.png)
+![](./images/Picture14.png)
 
-![](RackMultipart20230612-1-5t9gl9_html_7da4b5ee74a60b87.png)
+![](./images/Picture15.png)
 
 #### Series functions
 
@@ -84,10 +84,8 @@ To see an example of using this API call, look at the query **qry\_fred\_release
 
 - **sources** – returns a table containing the 110+ sources used by FRED
 
-![](RackMultipart20230612-1-5t9gl9_html_a69fa3644ccdc8f9.png)
+![](./images/Picture16.png)
 
 ### Summary
 
 We've wrapped up the initial tutorials covering the FRED-related functions and tables. In the next set of tutorials, we'll turn our attention to the API calls available from the U.S. Energy Information Administration (EIA) – stay tuned!
-
-Last Saved: 6/12/2023 2:31:00 PM
