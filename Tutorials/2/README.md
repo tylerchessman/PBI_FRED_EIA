@@ -6,6 +6,8 @@ _A new data connector provides easy access to over 1 million economic and energy
 
 In this quick tutorial, we learn how to pivot and adjust data observations – resulting in a format that can be easier to work with in Power BI.
 
+**Update** - The video companion for this tutorial is now available [here](https://youtu.be/SzQlwsSceW8).
+
 ### Getting Started
 
 Download the starter report for this tutorial, [Enpublica_Tutorial2_Begin.pbix](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/2/Enpublica_Tutorial2_Begin.pbix) (note – this tutorial uses data from the FRED database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Next, open the report in Power BI Desktop:
