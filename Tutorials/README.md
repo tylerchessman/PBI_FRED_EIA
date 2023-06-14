@@ -4,4 +4,6 @@
 
 [Tutorial 2](./2) - Pivoting and adjusting series observations
 
+[Tutorial 3](./3) - Additional FRED Calls
+
 Instructions (including links to Video tutorials when/if available) along with corresponding PBIX file(s) are in each folder.
