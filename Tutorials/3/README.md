@@ -6,6 +6,8 @@ _A new data connector provides easy access to over 1 million economic and energy
 
 In the first few tutorials, we looked at how to connect to the FRED database – and focused primarily on using two calls ( **fred\_series** and **fred\_series\_observations** ) to retrieve series related metadata and observations. In this post, we review some of the other FRED API Calls, including the use of categories and releases to simultaneously query/import multiple related series.
 
+**Update** - The video companion for this tutorial is now available [here](https://youtu.be/ew_UmgQRhGE).
+
 ### Getting Started
 
 Download the report for this tutorial, [Enpublica_Tutorial3.pbix](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/3/Enpublica_Tutorial3.pbix) (note – this tutorial uses data from the FRED database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the FRED website to [request a key](https://fred.stlouisfed.org/docs/api/api_key.html)). Then, open the report in Power BI Desktop.
