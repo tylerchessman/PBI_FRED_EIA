@@ -8,7 +8,7 @@ The Enpublica data connector provides access to over 1 million economic and ener
 Each data source requires its own api_key - which needs to be obtained directly from the respective publisher:
 * FRED - https://fred.stlouisfed.org/docs/api/api_key.html
 * EIA - https://www.eia.gov/opendata/register.php
-* Enpublica - submit an <a href="mailto:api_key_request@enpublica.com?subject=New%20api_key%20request&body=I%20would%20like%20to%20request%20a%20new%20api_key%20for%20Enpublica%20datasets.">email request</a> for a new api_key.
+* Enpublica - submit an <a href="mailto:api_key_request@enpublica.com?subject=New%20API_KEY%20Request&body=Hello%2C%20I%20would%20like%20to%20request%20a%20new%20api_key.%0A%0A%3CNewKeyRequestV1%20DO%20NOT%20MODIFY%20THIS%20LINE%3E">email request</a> for a new api_key.
 
 **Note** - Each api key is stored/managed in Power BI, and only transmitted to the respective data source.
 
