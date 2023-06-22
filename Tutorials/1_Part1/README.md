@@ -46,7 +46,7 @@ Click **fn\_fred\_series** in the Queries window, enter the following values int
 
 ![](./images/Invoke_Fred_Series.gif)
 
-Next click/highlight the **fn\_fred\_series\_observations** function, enter the following values into the series\_id parameter: **GDPC1, UNRATE, CPIAUCNS&units=pc1** , and then click the **Invoke** button. This will return the same three series, but instead of metadata about the series, the actual values (i.e. the observations) are returned. Rename the **Invoked Function** to **fred\_series\_obs**. In the **Home** ribbon of the Power Query Editor, click the **Close & Apply** button.
+Next click/highlight the **fn\_fred\_series\_observations** function, enter the following values into the series\_id parameter: **GDPC1, UNRATE, CPIAUCNS&units=pc1** , and then click the **Invoke** button. This will return the same three series, but instead of metadata about the series, the actual values (i.e. the observations) are returned. Rename the **Invoked Function** to **fred\_series\_observations**. In the **Home** ribbon of the Power Query Editor, click the **Close & Apply** button.
 
 ![](./images/Tutorial1_Part1_5.jpg)
 
