@@ -70,7 +70,7 @@ Next, highlight the table (upper left-hand side) and click (or drag/drop) the fo
 
 Note that I've adjusted the formatting of some of the date columns (observation start/end) – and set the Data category for the URL column to Web URL. These adjustments can be made by clicking on the name of a particular column (in the Data tab) and then using the **Column tools** Ribbon (to display a URL icon, rather than the actual text, set the URL icon to On in the Table visual formatting area).
 
-Almost done; highlight the line chart visual, and the check (or drag/drop) the **date** and **value** column from the **fred\_series\_obs** table.
+Almost done; highlight the line chart visual, and then check (or drag/drop) the **date** and **value** column from the **fred\_series\_obs** table.
 
 Select a series in the Slicer, and you should see something like the following -
 
