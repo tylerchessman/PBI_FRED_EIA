@@ -8,13 +8,13 @@ In the first several tutorials, we looked at how to connect to the FRED database
 
 ### Getting Started
 
-Download the report for this tutorial, **Enpublica\_Tutorial4.pbix** (note – this tutorial uses data from the EIA database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the EIA website to [request a key](https://www.eia.gov/opendata/register.php)). Then, open the report in Power BI Desktop. Two pages have been created – each showing an example of how to visualize series data.
+Download the report for this tutorial, [Enpublica_Tutorial4.pbix](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/4/Enpublica_Tutorial4.pbix) (note – this tutorial uses data from the EIA database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the EIA website to [request a key](https://www.eia.gov/opendata/register.php)). Then, open the report in Power BI Desktop. Two pages have been created – each showing an example of how to visualize series data.
 
 ![](./images/Picture1.png)
 
 Next, open the Power Query Editor by clicking **Transform data** from the **Home** Ribbon. You'll notice four functions (and four queries) have already been added to this report:
 
-![](Picture2.png)
+![](./images/Picture2.png)
 
 **Tip** : to work with the connector in a _new_ report, you need to first add the functions -
 
@@ -25,25 +25,25 @@ Next, open the Power Query Editor by clicking **Transform data** from the **Home
 - Select the desired function(s) from the Navigator window
 - Select **Transform Data** (in the Power Query Editor, click **Connect** )
 
-![](RackMultipart20230626-1-2z7fcm_html_36c0c4d4e64eb1c8.gif)
+![](./images/EIA_AddFunctions.gif)
 
 ### Function Definitions
 
 - **fn\_eia\_v1\_series** – returns metadata about one or more V1 series. A quick note about "V1" versus "V2"; similar to FRED, the EIA originally returned series in a pure time series format (i.e. date and value) – this is V1. The V1 API has been discontinued, but it is still possible to request a series using the original V1 series id.
 
-![](Picture3.png)
+![](./images/Picture3.png)
 
 - **fn\_eia\_v1\_series\_observations** – returns the observations (data values) for one or more V1 series. Like the FRED API, we've enhanced this function to allow for optional pivoting and customization of the series name.
 
-![](RackMultipart20230626-1-2z7fcm_html_2cbf93632a23fc0b.png)
+![](./images/Picture4.png)
 
 - **fn\_eia\_v2\_series** – returns metadata about a V2 series.
 
-![](RackMultipart20230626-1-2z7fcm_html_d8d7cc2d03323a77.png)
+![](./images/Picture5.png)
 
 - **fn\_eia\_v2\_series\_observations -** returns the observations (data values) for a V2 series. Unlike a V1 series, a V2 series is (potentially) a multi-dimensional, multi-value dataset – hence, only one V2 series can be requested/retrieved at a time. For example, the **electricity/retail-sales** V2 series return monthly data about electricity revenue, sales, price, and customer counts by U.S. state/region.
 
-![](RackMultipart20230626-1-2z7fcm_html_2d3430a5b0519de9.gif)
+![](./images/EIA_V2_Series.gif)
 
 ### Finding Data to Visualize
 
