@@ -6,6 +6,8 @@ _A new data connector provides easy access to over 1 million economic and energy
 
 In the first several tutorials, we looked at how to connect to the FRED database – and briefly used Enpublica specific datasets for adding recession bars to visuals. In this post, we turn our attention to the other primary source of data, the U.S. Energy Information Administration (EIA).
 
+**Update** - The video companion for this tutorial is now available [here](https://youtu.be/nCEIfWjD6G8).
+
 ### Getting Started
 
 Download the report for this tutorial, [Enpublica_Tutorial4.pbix](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/4/Enpublica_Tutorial4.pbix) (note – this tutorial uses data from the EIA database, you'll need to obtain an api key to refresh the data; see Tutorial 1, part 1 for details, or visit the EIA website to [request a key](https://www.eia.gov/opendata/register.php)). Then, open the report in Power BI Desktop. Two pages have been created – each showing an example of how to visualize series data.
