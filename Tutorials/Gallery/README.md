@@ -12,6 +12,8 @@ As we create new and interesting reports, we plan to drop them here in the galle
   
 ![](./images/Thumbnail_Gallery_001_WorldEnergyProduction.jpg)
 
-* **Rig Counts**.  Sourced from Baker Hughes, this bellweather indicator for the Oil & Gas industry is closely watched by investors.  Download the report here; a hosted version of the report is available [here](https://app.powerbi.com/view?r=eyJrIjoiNGJhZGI2YjQtNWJiZC00NWNjLWIzN2EtOGZkY2FkMDk4M2EyIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9).
-  
+* **Rig Counts**.  Sourced from Baker Hughes, this bellweather indicator for the Oil & Gas industry is closely watched by investors.  Download the report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/Gallery/RigCountsV2.pbix); a hosted version of the report is available [here](https://app.powerbi.com/view?r=eyJrIjoiNGJhZGI2YjQtNWJiZC00NWNjLWIzN2EtOGZkY2FkMDk4M2EyIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9).
+
+![](./images/Thumbnail_Gallery_001_RigCounts.jpg)
+
 * **Stay tuned** for more!
