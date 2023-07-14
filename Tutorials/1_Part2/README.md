@@ -28,7 +28,7 @@ In the **Enpublica** Window, select enpublica from the Data Source drop down.
 
 ![](./images/Picture3.png)
 
-Note: the first time you use the enpublica data source, you will need to obtain an api\_key to establish connectivity. This api\_key is separate from the api\_key used to connect to the FRED database. You can submit a request for an enpublica api\_key via [email](mailto:Support@enpublica.com?subject=New%20API_KEY%20Request&body=Hello%2C%20I%20would%20like%20to%20request%20a%20new%20api_key.%0A%0A%3CNewKeyRequestV1%20DO%20NOT%20MODIFY%20THIS%20LINE%3E). If you happen to enter in the wrong api\_key, please visit here to learn how to course correct.
+Note: the first time you use the enpublica data source, you will need to obtain an api\_key to establish connectivity. This api\_key is separate from the api\_key used to connect to the FRED database. You can submit a request for an enpublica api\_key via [email](mailto:Support@enpublica.com?subject=New%20API_KEY%20Request&body=Hello%2C%20I%20would%20like%20to%20request%20a%20new%20api_key.%0A%0A%3CNewKeyRequestV1%20DO%20NOT%20MODIFY%20THIS%20LINE%3E). If you happen to enter in the wrong api\_key, please visit [here](https://github.com/tylerchessman/PBI_FRED_EIA/blob/main/Tutorials/1_Part1/FixConnErrors.md) to learn how to course correct.
 
 ![](./images/Picture4.png)
 
