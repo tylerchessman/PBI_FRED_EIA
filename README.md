@@ -4,6 +4,15 @@ A Power BI Data Connector for the St. Louis Federal Reserve (FRED) and U.S. Ener
 ### Summary
 The Enpublica data connector provides access to over 1 million economic and energy-related time series directly in Power BI.  In addition to simple time series (i.e. date/value), the FRED and EIA databases host a variety of multidimensional datasets.  This connector also exposes a small set of supplemental datasets directly from Enpublica - including historical data and a custom date dimension.
 
+### Key Benefits
+While the FRED and EIA databases provide access to datasets through a REST API, the Enpublica connector provides several ease-of-use and productivity benefits, including:
+*  API Key management.  Instead of including api_key values directly in the URL, the Enbublica connector uses Power BI key authentication to keep keys secure and encrypted.
+*  JSON parsing.  Many of the API calls require JSON parsing before the resultsets are usable within Power BI; the connector does this automatically.
+*  Data type conversion.  Rather than having to manually find/adjust numeric and date values, the connector does this for you.
+*  Automatic paging.  When retrieving large datasets, the APIs return only a subset of rows at a time.  The connector automatically pagination, and introduces waits to avoid hitting API call limits.
+*  Parameter management.  Instead of having to manually append parameters to a URL, the connector allows parameters to be easily entered through the Power BI Query Editor.
+*  Multi Series retrieval.  Need to retrieve multiple series at the same time?  The connector does this automatically - while also giving you the option to use series names (instead of series ids).
+
 ### Prerequisites
 Each data source requires its own api_key - which needs to be obtained directly from the respective publisher:
 * FRED - https://fred.stlouisfed.org/docs/api/api_key.html
