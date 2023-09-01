@@ -16,4 +16,8 @@ As we create new and interesting reports, we plan to drop them here in the galle
 
 ![](./images/Thumbnail_Gallery_001_RigCounts.jpg)
 
+* **United States Federal Debt**.  Based on research originally done for a book, this dataset has recently been updated with the latest (and depressing) numbers - 32 trillion and counting.  A hosted version of the report is available [here](https://app.powerbi.com/view?r=eyJrIjoiOTUwNWI3MjAtNzJkOC00MGFkLTg1YzQtOThmODJkODJhZTJjIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9).
+
+![](./images/Thumbnail_Gallery_002_USFederalDebt.jpg)
+
 * **Stay tuned** for more!
