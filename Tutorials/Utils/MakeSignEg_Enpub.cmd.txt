@@ -1,0 +1,5 @@
+C:\Users\Tyler\Documents\MakePQX\MakePQX_Release\MakePQX.exe pack -mz "C:\Users\Tyler\Documents\PQ_Enp\Enpublica.mez" -t "C:\Users\Tyler\Documents\PQ_Enp\Enpublica.pqx"
+
+C:\Users\Tyler\Documents\MakePQX\MakePQX_Release\MakePQX.exe sign "C:\Users\Tyler\Documents\PQ_Enp\Enpublica.pqx" --certificate "C:\Users\Tyler\Documents\PQ_Enp\CodeSigning\tlccertificate.pfx" --password Abc123###
+
+C:\Users\Tyler\Documents\MakePQX\MakePQX_Release\MakePQX.exe verify "C:\Users\Tyler\Documents\PQ_Enp\Enpublica.pqx"

@@ -1,0 +1,38 @@
+@echo off
+
+set SOURCE_DIR=%~dp0
+set TARGET_DIR=%USERPROFILE%\Documents\Power BI Desktop\Custom Connectors\
+
+echo Copying files from %SOURCE_DIR% to %TARGET_DIR%...
+
+xcopy /Y /E /I "%SOURCE_DIR%*.pqx" "%TARGET_DIR%"
+
+set "key=HKLM\Software\Policies\Microsoft\Power BI Desktop"
+set "value=TrustedCertificateThumbprints"
+set "newLine=41F1C8CBB8853A83E0B5F249156F29BE72B77731"
+
+:: Check if the value already exists
+reg query "%key%" /v "%value%" | findstr /i "%value%" >nul
+if %errorlevel% equ 0 (
+  echo Value already exists
+
+  set "result="
+  for /f "tokens=2*" %%a in ('reg query "%key%" /v "%value%" ^| find /i "%value%"') do set "result=%%b"
+  
+  Set resultForTest=t%result%
+  echo %resultForTest%
+  SET newVal=%newLine%\0%result%
+  
+  echo "%resultForTest%"|find "%newLine%" >nul
+  if errorlevel 1 (
+	echo notfound
+      reg add "%key%" /v "%value%" /t REG_MULTI_SZ /d "%newLine%" /f
+   ) else (
+	echo found)
+
+) else (
+  echo Value does not exist. Creating new value with the new line: "%newLine%"
+  reg add "%key%" /v "%value%" /t REG_MULTI_SZ /d "%newLine%"
+)
+
+echo Done.
