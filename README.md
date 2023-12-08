@@ -33,6 +33,8 @@ After obtaning the necessary api_key(s), download and configure the connector in
 ### Connector Installation - Power BI Service
 To use this connector in the service (e.g., for scheduled refresh), you will need to enable custom data connectors in the gateway; this can be configured in the gateway app. Refer to https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-custom-connectors for instructions.
 
+**Update!**  See this <a href="./Tutorials/5_DataRefresh/Enpublica_DC_ForPBI_TGateway.pdf">quick tutorial</a> for using the gateway with the Enpublica data connector.
+
 ### Getting Started
 Learn how to use the connector by working through the <a href="./Tutorials">tutorials</a>.
 
