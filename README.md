@@ -26,11 +26,11 @@ Each data source requires its own api_key - which needs to be obtained directly 
 
 ### Connector Installation - Power BI Desktop
 After obtaning the necessary api_key(s), download and configure the connector in the Power BI Desktop; configuration can be done either:
-* Automatically.  Download and run the signed self-extracting installer - <a href="https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Enpublica_DataConn_PBI.exe">Enpublica_DataConn_PBI.exe</a>.  This file will install the connector, and add it as a trusted connection. **Note:** requires Admin privileges.
-* Manually.  Download the connector file Enpublica.pqx and then:
+* Manually.  Download the connector file <a href="https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Enpublica.mez">Enpublica.mez</a> and then:
     * Copy the connector file to the local [Documents]\Power BI Desktop\Custom Connectors folder. If the folder doesn't exist, create it.
-    * Adjust the data extension security settings; refer to https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connector-extensibility for instructions.
-
+    * Adjust the data extension security settings in Power BI Desktop, File-Options-Security-Data Extensions-Allow any extension to load.  Refer to https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connector-extensibility for instructions.
+* Automatically.  Download the zip file <a href="https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/EnpublicaDQ_2024.zip">EnpublicaDQ_2024.zip</a>.  Unzip and run Setup.bat to automatically install the connector, and add it as a trusted connector. **Note:** requires Admin privileges.
+  
 **Tip!**  If you install the connector _while_ Power BI Desktop is open, make sure you close/re-open Power BI Desktop to ensure the connector is loaded.
 
 ### Connector Installation - Power BI Service
