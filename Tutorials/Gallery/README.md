@@ -8,6 +8,8 @@ As we create new and interesting reports, we plan to drop them here in the galle
 
 ### Gallery Items
 
+* **World Energy Production (Through 2022)**.  An update of the World Energy Production, I'm keeping both the prior and this version as there are some fairly large data revisions.   Download the report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/Gallery/EIA_WorldEnergyProduction_20224.pbix); a hosted version of the report is available [here](https://app.powerbi.com/view?r=eyJrIjoiMWVmMWM5NjAtYTM0Ni00Mjg3LWIzOWYtYjEyZDA0NTNjNWVlIiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9).
+  
 * **World Energy Production**.  Using data from the U.S. EIA, this report shows annual energy production and consumption (by country) since 1980.  The Enpublica Data Connector automatically handles the pagination needed to return the ~75k rows.  This report also uses bookmarks and a tooltip page to aid in visualization.   Download the report [here](https://github.com/tylerchessman/PBI_FRED_EIA/raw/main/Tutorials/Gallery/EIA_WorldEnergyProduction.pbix); a hosted version of the report is available [here](https://app.powerbi.com/view?r=eyJrIjoiMDZmYTQzZmUtNzgyZC00ZDM0LTk1ODQtMmM5NzIwZDkwZWI3IiwidCI6IjRmY2YxMGM2LWVjODEtNDhkYy1iNzZjLTJjM2Q2MDAxN2M1YSIsImMiOjZ9&embedImagePlaceholder=true).
   
 ![](./images/Thumbnail_Gallery_001_WorldEnergyProduction.jpg)
