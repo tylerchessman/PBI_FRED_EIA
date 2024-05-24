@@ -1,6 +1,9 @@
 # Enpublica data connector for Power BI
 A Power BI Data Connector for the St. Louis Federal Reserve (FRED) and U.S. Energy Information Administration (EIA) databases.
 
+### Want to see this connector automatically included with Power BI?
+Help get this connector certified by voting <a href="https://ideas.fabric.microsoft.com/ideas/idea/?ideaid=437ab693-4155-ed11-a76e-0003ff4534c2">here</a> and <a href="https://ideas.fabric.microsoft.com/ideas/idea/?ideaid=18f4857d-5269-412e-b093-a036b52c3fa1">here</a>!
+
 ### Summary
 The Enpublica data connector provides access to over 1 million economic and energy-related time series directly in Power BI.  In addition to simple time series (i.e. date/value), the FRED and EIA databases host a variety of multidimensional datasets.  This connector also exposes a small set of supplemental datasets directly from Enpublica - including historical data and a custom date dimension.
 
